@@ -1,0 +1,9 @@
+**/*.png
+**/*.pdf
+**/*.txt
+**/*.zip
+**/*.docx
+**/*.pyc
+
+01_inne/**
+.vscode/
