@@ -32,6 +32,10 @@ class Neuron(object):
 			array of values, provide to neuron inputs
 
 		'''
+
+		if isinstance(inputs, (int, float)):
+			inputs = [inputs]
+
 		return sum([a * b for a, b in zip(inputs, self.weight)])
 
 	def calc_delta(self, output, desired):
@@ -109,3 +113,4 @@ class Neuron(object):
 			plt.savefig(path)
 		else:
 			plt.show()
+
