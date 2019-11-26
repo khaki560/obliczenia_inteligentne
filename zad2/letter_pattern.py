@@ -12,7 +12,10 @@ def calculate_lenght(vector):
 	]))
 
 def normalize(vector):
-	length = calculate_lenght(vector)
-	return [
-		v/length for v in vector
-	]
+	try:
+		length = calculate_lenght(vector)
+		return [
+			v/length for v in vector
+		]
+	except: 
+		return vector
